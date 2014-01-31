@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "19f7d976ed9af8ee301f62be8f1e853f",
+    "hash": "a256f77791912973963a8db83c18edb8",
     "packages": [
         {
             "name": "composer/installers",
@@ -302,16 +302,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "d19becb682abb5954b71a6ef2e93804302484f39"
+                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d19becb682abb5954b71a6ef2e93804302484f39",
-                "reference": "d19becb682abb5954b71a6ef2e93804302484f39",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2821c024b4c14c7e6d1ff99e063ae9532620beb2",
+                "reference": "2821c024b4c14c7e6d1ff99e063ae9532620beb2",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-01-14 16:37:15"
+            "time": "2014-01-31 16:18:39"
         },
         {
             "name": "wordpress",
