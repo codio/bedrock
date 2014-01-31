@@ -1,37 +1,29 @@
 #!/bin/bash
  
-echo -n "Enter the MySQL root password: "
-read -s rootpw
-echo -n "Enter database name: "
-read dbname
-echo -n "Enter database username: "
-read dbuser
-echo -n "Enter database user password: "
-read dbpw
 echo -n "Enter project name: "
 read project 
 
-db="create database $dbname;GRANT ALL PRIVILEGES ON $dbname.* TO $dbuser@localhost IDENTIFIED BY '$dbpw';FLUSH PRIVILEGES;"
-mysql -u root -p$rootpw -e "$db"
+db="create database wp;GRANT ALL PRIVILEGES ON wp.* TO root@localhost IDENTIFIED BY 'qqqqqq';FLUSH PRIVILEGES;"
+mysqladmin -u root password qqqqqq
+mysql -u root -pqqqqqq -e "$db"
  
 if [ $? != "0" ]; then
  echo "[Error]: Database creation failed"
  exit 1
 else
- echo "------------------------------------------"
- echo " Database has been created successfully "
- echo "------------------------------------------"
+ echo "----------------------------------------------"
+ echo " Database details added by Codio cheat script "
+ echo "---------------------------------------------"
  echo " DB Info: "
  echo ""
- echo " DB Name: $dbname"
- echo " DB User: $dbuser"
- echo " DB Pass: $dbpw"
+ echo " DB Name: wp"
+ echo " DB User: root"
  echo ""
  echo "------------------------------------------"
  
- echo "DB_NAME=$dbname" >> ".env"
- echo "DB_USER=$dbuser" >> ".env"
- echo "DB_PASSWORD=$dbpw" >> ".env"
+ echo "DB_NAME=wp" >> ".env"
+ echo "DB_USER=root" >> ".env"
+ echo "DB_PASSWORD=qqqqqq" >> ".env"
  echo "DB_HOST=localhost" >> ".env"
  
  echo "WP_ENV=development" >> ".env"
