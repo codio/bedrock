@@ -1,6 +1,6 @@
 #!/bin/bash
  
-cp wp-config-dummy.php ~/workspace/wp/wp-config.php 
+cp wp-config-sample.php ~/workspace/wp/wp-config.php 
 
 echo -n "Enter project name: "
 read project 
