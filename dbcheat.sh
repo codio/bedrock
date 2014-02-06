@@ -29,6 +29,6 @@ else
  echo "DB_HOST=localhost" >> ".env"
  
  echo "WP_ENV=development" >> ".env"
- echo "WP_HOME=http://$project.fmay.boxes.codiodev.com:3000/" >> ".env"
- echo "WP_SITEURL=http://$project.fmay.boxes.codiodev.com:3000/wp"  >> ".env"
+ echo "WP_HOME=http://$project.boxes.codiodev.com:3000/" >> ".env"
+ echo "WP_SITEURL=http://$project.boxes.codiodev.com:3000/wp"  >> ".env"
 fi
